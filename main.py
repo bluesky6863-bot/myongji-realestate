@@ -8,13 +8,8 @@ TELEGRAM_CHAT_ID = "8975967544"
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# 2. 모델 설정
-model_name = 'gemini-1.5-flash'
-try:
-    model = genai.GenerativeModel('gemini-1.5-flash')
-except Exception as e:
-    print(f"모델 설정 중 오류 발생: {e}")
-    model = genai.GenerativeModel('gemini-1.5-flash')
+# 2. 최신 제미나이 모델 설정
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 3. 명지 e편한세상 분석 데이터
 market_data = """
