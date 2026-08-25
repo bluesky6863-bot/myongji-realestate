@@ -8,8 +8,8 @@ TELEGRAM_CHAT_ID = "8975967544"
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# 2. 최신 제미나이 모델 설정
-model = genai.GenerativeModel('gemini-2.5-flash')
+# 2. 최신 제미나이 모델 설정 (gemini-3.6-flash 지정)
+model = genai.GenerativeModel('gemini-3.6-flash')
 
 # 3. 명지 e편한세상 분석 데이터
 market_data = """
